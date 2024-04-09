@@ -1,8 +1,13 @@
-# React + Vite
+README.txt
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+Bienvenue sur mon portfolio !
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ce portfolio présente une sélection de mes projets en développement web et mobile, démontrant mon expertise dans ces domaines. Chaque projet est accompagné de son propre répertoire, contenant le code source et des instructions d'installation et d'utilisation. Des démonstrations et des captures d'écran sont également disponibles pour certains projets.
+
+Explorez mes réalisations et découvrez mes compétences en matière de développement. N'hésitez pas à me contacter pour toute question ou collaboration potentielle.
+
+Merci pour votre intérêt et votre visite !
+
+Donatien OUSSA, donatienoussaodb@gmail.com

@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from "react"
+import {useState} from "react"
 import { Link } from "react-router-dom"
 import { styles } from '../styles'
 import { navLinks } from '../constants'
-import {logo, menu, close} from '../assets'
+import {logoodb, menu, close} from '../assets'
 
 
 function Navbar() {
@@ -24,7 +24,7 @@ function Navbar() {
           }
         >
           <img
-            src={logo}
+            src={logoodb}
             alt="logo"
             className="w-9 h-9 object-contain"
           />
