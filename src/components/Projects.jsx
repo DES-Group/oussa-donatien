@@ -5,6 +5,7 @@ import { github } from '../assets'
 import { projects } from '../constants'
 import { SectionWrapper } from '../hoc'
 import { fadeIn, textVariant } from '../utils/motion'
+import { Link } from 'react-router-dom'
 
 
 
@@ -27,12 +28,14 @@ const ProjectCard = ({index, name, description, tags, image,  source_code_link})
           />
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={window.open(source_code_link, '_blank')}
+          
+            <Link
+              to={source_code_link}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              target='_blank'
             >
               <img src={github} alt="github"  className='w-1/2 h-1/2 object-contain'/>
-            </div>
+            </Link>
           </div>
         </div>
 

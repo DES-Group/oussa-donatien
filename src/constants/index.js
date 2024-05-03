@@ -19,7 +19,6 @@ import {
   tesla,
   shopify,
   efa,
-  jobit,
   tripguide,
   threejs,
   symfony,
@@ -231,7 +230,7 @@ const projects = [
       },
     ],
     image: efa,
-    source_code_link: "https://github.com/",
+    source_code_link: "#",
   },
   {
     name: "Plateforme numérique de la mairie de Sô-ava",
@@ -252,7 +251,7 @@ const projects = [
       },
     ],
     image: mairie,
-    source_code_link: "https://github.com/",
+    source_code_link: "#",
   },
   {
     name: "Snapgram",
@@ -273,7 +272,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "#",
   },
 ];
 

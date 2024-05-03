@@ -33,7 +33,7 @@ function Navbar() {
           </p>
         </Link>
         
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul className="list-none hidden lg:flex flex-row gap-10">
           {
             navLinks.map((link) => (
               <li
@@ -43,14 +43,14 @@ function Navbar() {
                   } hover:text-white text-[18px] font-medium cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
-                <a href={`#${link.id}`}>{ link.title }</a>
+                <Link to={`#${link.id}`}>{ link.title }</Link>
               </li>
             ))
           }
         </ul>
 
         {/* Mobile navigation */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="lg:hidden flex flex-1 justify-end items-center">
           <img
             src={ toggle ? close : menu}
             alt="menu"
@@ -72,7 +72,7 @@ function Navbar() {
                     setActive(link.title)
                   }}
                 >
-                <a href={`#${link.id}`}>{ link.title }</a>
+                <Link href={`#${link.id}`}>{ link.title }</Link>
                 </li>
               ))
             }
