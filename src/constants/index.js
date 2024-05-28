@@ -15,9 +15,7 @@ import {
   git,
   figma,
   docker,
-  meta,
-  tesla,
-  shopify,
+  nextjs,
   efa,
   tripguide,
   threejs,
@@ -40,10 +38,6 @@ export const navLinks = [
     title: "Projects",
   },
   {
-    id: 'blog',
-    title: 'Blog'
-  },
-  {
     id: "contact",
     title: "Contact",
   },
@@ -52,19 +46,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Développeur web",
-    icon: web,
-  },
-  {
-    title: "Développeur mobile Flutter",
+    title: "Analyse de projet",
     icon: mobile,
   },
   {
-    title: "Développeur Full Stack",
+    title: "Création d'interface utilisateur",
+    icon: web,
+  },
+  {
+    title: "Mise en place du backend",
     icon: creator,
   },
   {
-    title: "Ingénieur d'IA",
+    title: "Utilisation d'APIs",
     icon: backend,
   },
   
@@ -131,54 +125,42 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Développeur web",
+    title: "Développeur web PHP/Symfony",
     company_name: "Freelance",
     icon: symfony,
     iconBg: "#fff",
-    date: "Mars 2019 - Avril 2021",
+    date: "Novembre 2018 - Mai 2020",
     points: [
-      "Expert dans le développement et la maintenance d'applications web, avec une expertise particulière dans l'utilisation synergique de Symfony, React.js et Next.js.",
-      "Collaborer avec des équipes interfonctionnelles, notamment des concepteurs, des chefs de produits et d'autres développeurs, pour créer des produits de haute qualité.",
-      "Mettre en œuvre une conception réactive et assurer la compatibilité entre navigateurs.",
-      "Participer aux révisions de code et fournir des commentaires constructifs aux autres développeurs.",
+      "Expertise en PHP/Symfony.",
+      "Développement d'applications web robustes.",
+      "Gestion efficace des bases de données.",
+      "Résolution de problèmes et débogage.",
     ],
   },
   {
-    title: "Développeur mobile Flutter",
+    title: "Développeur frontend React.js",
     company_name: "Freelance",
-    icon: tesla,
+    icon: reactjs,
     iconBg: "#E6DEDD",
-    date: "Janvier 2021 - Février 2022",
+    date: "Juin 2020 - Septembre 2021",
     points: [
-      "Développeur mobile expérimenté spécialisé dans Flutter œuvrant à la création et à la maintenance d'applications de qualité supérieure.",
-      "Travail en étroite collaboration avec des équipes pluridisciplinaires, alliant les compétences des designers, des chefs de produit et des développeurs, pour créer des produits remarquables et hautement fonctionnels.",
-      "Création d'expériences utilisateur fluides grâce à la mise en œuvre de designs réactifs et à la garantie d'une compatibilité sans faille sur différents navigateurs et dispositifs.",
+      "Maîtrise de React & React Toolkit.",
+      "Connaissance des technologies front-end.",
+      "Développement d'applications réactives.",
+      "Utilisation des APIs."
     ],
   },
   {
-    title: "Développeur Full stack",
+    title: "Développeur Full stack Next.js & React.js",
     company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Janvier 2022 - Janvier 2023",
+    icon: nextjs,
+    iconBg: "#fff",
+    date: "Septembre 2021 - Aujourd'hui",
     points: [
-      "Développeur Full Stack aguerri, maîtrisant les technologies telles que Symfony, React.js et Next.js pour créer des applications web et mobiles innovantes.",
-      "Collaboration étroite au sein d'équipes pluridisciplinaires pour concevoir et mettre en œuvre des produits de haute qualité, alliant expertise back-end et front-end.",
-      "Implémentation de solutions réactives pour une expérience utilisateur fluide et une compatibilité multiplateforme, en tirant parti de mon expertise complète en développement full stack.",
-    ],
-  },
-  {
-    title: "Ingénieur d'IA",
-    company_name: "Shopify",
-    icon: meta,
-    iconBg: "#383E56",
-    date: "Janvier 2022 - Janvier 2024",
-    points: [
-      "En tant que développeur Full Stack spécialisé dans l'Intelligence Artificielle (IA), mon expertise s'étend à la conception de solutions technologiques axées sur l'analyse des données et l'IA.",
-      "Je travaille en étroite collaboration avec des équipes pluridisciplinaires pour créer des produits innovants qui intègrent des fonctionnalités avancées d'analyse des données et d'IA.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-      "En utilisant des technologies telles que Symfony, React.js et Next.js côté frontend, combinées à des frameworks d'IA côté backend, je développe des solutions robustes et évolutives.",
-      "Mon implication dans les revues de code et la fourniture de retours constructifs visent à garantir la qualité et l'efficacité des solutions IA que nous développons, tout en veillant à ce qu'elles répondent aux besoins spécifiques de nos clients."
+      "Expertise en React et Next.js",
+      "Développement d'applications web modernes et performantes",
+      "Gestion avancée de l'état de l'application",
+      "Capacité à créer des expériences utilisateur dynamiques et réactives"
     ],
   },
 ];
@@ -187,14 +169,14 @@ const testimonials = [
   {
     testimonial:
       "En tant que développeur, Donatien excelle dans la création de solutions techniques élégantes et innovantes, démontrant une expertise remarquable et un engagement sans faille envers la qualité et la réussite des projets.",
-    name: "SOGBO Luc",
+    name: "Luc De PIERRE",
     designation: "CFO",
     company: "Acme Co",
     image: "https://randomuser.me/api/portraits/men/4.jpg",
   },
   {
     testimonial:
-      "Dans toute ma carrière, je n'ai jamais rencontré un développeur web qui se soucie vraiment du succès de ses clients comme le fait Rick. Son dévouement sans faille envers la satisfaction et la réussite de ses clients est véritablement remarquable.",
+      "Dans toute ma carrière, je n'ai jamais rencontré un développeur web qui se soucie vraiment du succès de ses clients comme le fait Donatien. Son dévouement sans faille envers la satisfaction et la réussite de ses clients est véritablement remarquable.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -251,7 +233,7 @@ const projects = [
       },
     ],
     image: mairie,
-    source_code_link: "#",
+    source_code_link: "https://github.com/DES-Group/so-ava.git",
   },
   {
     name: "Snapgram",

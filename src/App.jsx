@@ -24,7 +24,7 @@ function App() {
         </div>
         <About />
         <Experience />
-        <Tech />
+        {/* <Tech /> */}
         <Projects />
         <Feedbacks />
         <div className="relative z-0">

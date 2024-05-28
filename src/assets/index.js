@@ -31,6 +31,8 @@ import mairie from "./mairie.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import symfony from "./tech/symfony.webp"
+import nextjs from "./tech/next.png"; 
+
 
 export {
   logoodb,
@@ -45,6 +47,7 @@ export {
   docker,
   figma,
   git,
+  nextjs,
   html,
   javascript,
   mongodb,
