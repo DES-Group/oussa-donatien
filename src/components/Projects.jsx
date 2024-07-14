@@ -72,8 +72,7 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1,1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-            Je suis un développeur passionné avec une expertise polyvalente dans Symfony, React, Next.js, Flutter et la conception 3D. En tant qu'ingénieur en intelligence artificielle, je suis spécialisé dans le développement d'algorithmes d'apprentissage automatique et de systèmes d'IA avancés. J'ai également une vaste expérience dans la création d'applications web et mobiles réactives, ainsi que dans la conception d'environnements 3D immersifs.<br />
-        Je suis motivé par les défis techniques et je m'efforce de repousser les limites de la technologie. Avec une approche centrée sur l'utilisateur et une attention particulière aux détails, je suis capable de créer des solutions innovantes qui répondent aux besoins et aux attentes des utilisateurs finaux.
+          Ici, vous découvrirez une sélection de mes projets, reflétant mon parcours et mon expertise en développement web et mobile. Chaque projet est une illustration de ma passion pour la création de solutions innovantes et performantes, utilisant des technologies modernes telles que React, React Native, Next.js et bien d'autres. Explorez mon travail et voyez comment je transforme des idées en applications réactives et intuitives, répondant aux besoins des utilisateurs finaux.
         </motion.p>
       </div>
 

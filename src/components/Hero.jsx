@@ -5,7 +5,9 @@ import {ComputersCanvas} from './canvas'
 const Hero = () => {
   return (
     <section className="relative w-full h-screen mx-auto">
-      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+      
+      <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl 
+          mx-auto flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915eff]' />
           <div className='w-1 sm:h-80 h-0 violet-gradient' />
@@ -16,15 +18,15 @@ const Hero = () => {
             <span className="text-[#915eff]"> Donatien</span>
           </h1>
           <p className={`${styles.heroSubText} mt-4`}>
-            Je suis un développeur web fullstack. Je suis <br className='sm:block hidden' />
+            Je suis un développeur web fullstack & mobile. Je suis <br className='sm:block hidden' />
             passionné, polyvalent, innovant & rigoureux.
           </p>
         </div> 
       </div>
 
-      {/* <ComputersCanvas />  */}
+      <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='xs:bottom-10 bottom-36 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
 

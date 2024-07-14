@@ -4,14 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logoodb.jpeg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Donatien OUSSA</title>
+    <title>Porfolio | Donatien OUSSA</title>
     <meta name="description" content="Développeur full-stack React, Next.js et Symfony - OUSSA Donatien">
     <meta name="keywords" content="React, Next.js, Symfony, développement web, développement full-stack, OUSSA Donatien">
     <meta name="author" content="OUSSA Donatien">
-    <title>OUSSA Donatien - Développeur full-stack React, Next.js et Symfony</title>
+    <title>OUSSA Donatien | Développeur full-stack React, Next.js et Symfony</title>
   </head>
   <body>
     <div id="root"></div>
+    <div class="cursor"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script type="text/javascript">
+      const cursor = document.querySelector(".cursor"); 
+
+      //Follow cursor on mousemove 
+      document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+        
+        cursor.style.top = y + "px" 
+        cursor.style.left = x + "px" 
+        cursor.style.display = "block"
+      })
+
+      //Cursor effects on mouse out 
+      document.addEventListener("mouseout", () => {
+        cursor.style.display = "none";
+      })
+    </script>
   </body>
 </html>

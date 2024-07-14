@@ -42,10 +42,11 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
       >
-        Je suis un développeur web fullstack passionné avec une expertise polyvalente dans Symfony, React, Next.js et Node.js. J'ai une vaste expérience dans la création d'applications web réactives.<br />
-        Je suis motivé par les défis techniques et je m'efforce de repousser les limites de la technologie. Avec une approche centrée sur l'utilisateur et une attention particulière aux détails, je suis capable de créer des solutions innovantes qui répondent aux besoins et aux attentes des utilisateurs finaux.
-      </motion.p>
+        Je suis un développeur web fullstack et mobile passionné, expert en Symfony, React, Next.js, Node.js et React-Native. Fort d'une expérience approfondie dans la création d'applications web et mobiles réactives et modernes, je suis motivé par les défis techniques et cherche constamment à repousser les limites de la technologie. Avec une approche centrée sur l'utilisateur et une grande attention aux détails, je conçois des solutions innovantes répondant aux besoins et attentes des utilisateurs finaux.<br /><br/>
 
+        <b className='text-2xl'>Je suis capable de :</b> 
+      </motion.p>
+      
       <div className='mt-20 flex flex-wrap gap-10'>
         {
           services.map((service, index) => (

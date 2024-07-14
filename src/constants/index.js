@@ -20,7 +20,8 @@ import {
   tripguide,
   threejs,
   symfony,
-  mairie
+  mairie, 
+  reactNative
 } from "../assets";
 
 
@@ -35,30 +36,30 @@ export const navLinks = [
   },
   {
     id: "projects",
-    title: "Projects",
+    title: "Projets",
   },
   {
     id: "contact",
     title: "Contact",
-  },
+  }
 ];
 
 
 const services = [
   {
-    title: "Analyse de projet",
+    title: "Analyser des projets",
     icon: mobile,
   },
   {
-    title: "Création d'interface utilisateur",
+    title: "Créer et coder des interfaces utilisateurs",
     icon: web,
   },
   {
-    title: "Mise en place du backend",
+    title: "Mettre en place le backend",
     icon: creator,
   },
   {
-    title: "Utilisation d'APIs",
+    title: "Créer et utiliser des APIs",
     icon: backend,
   },
   
@@ -161,6 +162,18 @@ const experiences = [
       "Développement d'applications web modernes et performantes",
       "Gestion avancée de l'état de l'application",
       "Capacité à créer des expériences utilisateur dynamiques et réactives"
+    ],
+  },
+  {
+    title: "Développeur mobile React-Native",
+    company_name: "Freelance",
+    icon: reactNative,
+    iconBg: "#fff",
+    date: "Juin 2022 - Aujourd'hui",
+    points: [
+      "Développement d'applications mobiles modernes et performantes.",
+      "Création d'expériences utilisateur dynamiques et réactives.",
+      "Optimisation des performances et intégration fluide avec les API et services backend.",
     ],
   },
 ];

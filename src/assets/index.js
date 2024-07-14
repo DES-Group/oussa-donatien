@@ -1,4 +1,4 @@
-import logoodb from './logoodb.jpeg';
+import logo from './logo.svg';
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -32,10 +32,11 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 import symfony from "./tech/symfony.webp"
 import nextjs from "./tech/next.png"; 
+import reactNative from "./tech/react-native.webp"
 
 
 export {
-  logoodb,
+  logo,
   backend,
   creator,
   mobile,
@@ -65,5 +66,6 @@ export {
   jobit,
   tripguide,
   symfony,
-  mairie
+  mairie, 
+  reactNative
 };
