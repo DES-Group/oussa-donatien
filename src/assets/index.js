@@ -3,7 +3,6 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
-import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
@@ -33,6 +32,11 @@ import tripguide from "./tripguide.png";
 import symfony from "./tech/symfony.webp"
 import nextjs from "./tech/next.png"; 
 import reactNative from "./tech/react-native.webp"
+import myPicture from "./donatien2.png" 
+import linkedin from "./social-media/linkedin.svg"
+import github from "./social-media/github.svg"
+import githubBlue from "./social-media/github-blue.svg"
+import whatsapp from "./social-media/whatsapp.svg"  
 
 
 export {
@@ -67,5 +71,9 @@ export {
   tripguide,
   symfony,
   mairie, 
-  reactNative
+  reactNative, 
+  myPicture, 
+  linkedin, 
+  whatsapp, 
+  githubBlue
 };

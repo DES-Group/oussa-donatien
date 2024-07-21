@@ -13,6 +13,10 @@
   color-scheme: dark;
 }
 
+.progress-circle {
+  stroke-linecap: round;
+}
+
 /**  Cursor styles */
 .cursor {
   z-index: 999; 

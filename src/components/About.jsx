@@ -44,7 +44,7 @@ const About = () => {
       >
         Je suis un développeur web fullstack et mobile passionné, expert en Symfony, React, Next.js, Node.js et React-Native. Fort d'une expérience approfondie dans la création d'applications web et mobiles réactives et modernes, je suis motivé par les défis techniques et cherche constamment à repousser les limites de la technologie. Avec une approche centrée sur l'utilisateur et une grande attention aux détails, je conçois des solutions innovantes répondant aux besoins et attentes des utilisateurs finaux.<br /><br/>
 
-        <b className='text-2xl'>Je suis capable de :</b> 
+        <b className='text-2xl'>Mon tech stack se présente comme suit :</b> 
       </motion.p>
       
       <div className='mt-20 flex flex-wrap gap-10'>

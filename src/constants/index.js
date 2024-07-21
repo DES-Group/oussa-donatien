@@ -47,81 +47,47 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Analyser des projets",
+    title: "Front-end (Dev côté client )",
     icon: mobile,
   },
   {
-    title: "Créer et coder des interfaces utilisateurs",
+    title: "Back-end (Dev côté serveur)",
     icon: web,
   },
   {
-    title: "Mettre en place le backend",
+    title: "Mobile Development",
     icon: creator,
   },
   {
-    title: "Créer et utiliser des APIs",
+    title: " DevOps (Déploiement et Infrastructure)",
+    icon: web,
+  },
+  {
+    title: " Outils de Collaboration et Productivité ",
     icon: backend,
+  },
+  {
+    title: " Analyse de la Qualité du Code ",
+    icon: mobile,
   },
   
 ];
 
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "Symfony",
-    icon: symfony,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: 'HTML 5', icon: html, percentage: 70, color: '#e44d26' },
+  { name: 'CSS 3', icon: css, percentage: 60, color: '#1572b6' },
+  { name: 'JavaScript', icon: javascript, percentage: 80, color: '#f7e018' },
+  { name: 'Symfony', icon: symfony, percentage: 50, color: '#000000' },
+  { name: 'TypeScript', icon: typescript, percentage: 65, color: '#007acc' },
+  { name: 'React JS', icon: reactjs, percentage: 75, color: '#61dafb' },
+  { name: 'Redux Toolkit', icon: redux, percentage: 55, color: '#764abc' },
+  { name: 'Tailwind CSS', icon: tailwind, percentage: 70, color: '#38b2ac' },
+  { name: 'Node JS', icon: nodejs, percentage: 65, color: '#8cc84b' },
+  { name: 'MongoDB', icon: mongodb, percentage: 60, color: '#47a248' },
+  { name: 'Three JS', icon: threejs, percentage: 55, color: '#000000' },
+  { name: 'git', icon: git, percentage: 80, color: '#f1502f' },
+  { name: 'figma', icon: figma, percentage: 50, color: '#f24e1e' },
+  { name: 'docker', icon: docker, percentage: 45, color: '#2496ed' },
 ];
 
 const experiences = [
