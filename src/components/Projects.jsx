@@ -3,14 +3,15 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { github } from '../assets'
 import { projects } from '../constants'
-import { SectionWrapper } from '../hoc'
-import { fadeIn, textVariant } from '../utils/motion'
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
 import { Link } from 'react-router-dom'
+import PropTypes from 'prop-types'
 
 
 
-const ProjectCard = ({index, name, description, tags, image,  source_code_link}) => {
+export const ProjectCard = ({index, name, description, tags, image,  source_code_link}) => {
   return (
+    
     <motion.div variants={fadeIn("up", "spring", index * 0.25, 0.75)}>
       <Tilt
         option={{
@@ -58,10 +59,25 @@ const ProjectCard = ({index, name, description, tags, image,  source_code_link})
   )
 }
 
+ProjectCard.propTypes = {
+  index: PropTypes.string, 
+  name: PropTypes.string, 
+  description: PropTypes.string, 
+  tags: PropTypes.array, 
+  image: PropTypes.string,
+  source_code_link: PropTypes.string
+}
 
-const Projects = () => {
+
+export const Projects = () => {
   return (
-    <>
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className={`${styles.padding} max-h-7xl mx-auto relative z-0`}
+    >
       <motion.div variants={textVariant()}>
         <p className={styles.heroSubText}>Mon travail</p>
         <h2 className={styles.heroHeadText}>Projets.</h2>
@@ -72,7 +88,7 @@ const Projects = () => {
           variants={fadeIn("", "", 0.1,1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Ici, vous découvrirez une sélection de mes projets, reflétant mon parcours et mon expertise en développement web et mobile. Chaque projet est une illustration de ma passion pour la création de solutions innovantes et performantes, utilisant des technologies modernes telles que React, React Native, Next.js et bien d'autres. Explorez mon travail et voyez comment je transforme des idées en applications réactives et intuitives, répondant aux besoins des utilisateurs finaux.
+          {`Ici, vous découvrirez une sélection de mes projets, reflétant mon parcours et mon expertise en développement web et mobile. Chaque projet est une illustration de ma passion pour la création de solutions innovantes et performantes, utilisant des technologies modernes telles que React, React Native, Next.js et bien d'autres. Explorez mon travail et voyez comment je transforme des idées en applications réactives et intuitives, répondant aux besoins des utilisateurs finaux.`}
         </motion.p>
       </div>
 
@@ -87,8 +103,6 @@ const Projects = () => {
           ))
         }
       </div>
-    </>
+    </motion.section>
   )
 }
-
-export default SectionWrapper(Projects, "projects")

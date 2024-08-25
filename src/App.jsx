@@ -1,5 +1,4 @@
 import { BrowserRouter } from "react-router-dom"
-
 import {
   About,
   Contact,
@@ -14,6 +13,7 @@ import {
 import Footer from "./components/Footer";
 
 
+
 function App() {
   
   return (
@@ -26,14 +26,21 @@ function App() {
             <StarsCanvas />
           </div>
         </div>
-        <About />
-        <Experience />
-        <Tech />
-        <Projects />
-        <Feedbacks />
+        
+        <About idName="about" />
+        
+        <Experience idName="experience" />
+        
+        <Tech idName="tech" />
+        
+        <Projects idName="projects" />
+        
+        <Feedbacks idName="feedbacks" />
+      
+        
         <div className="relative z-0">
-          <Contact />
-          <StarsCanvas />
+            <Contact />
+            <StarsCanvas />
         </div>
         <Footer />
       </div>

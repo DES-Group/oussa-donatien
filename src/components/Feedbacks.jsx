@@ -1,17 +1,17 @@
 import { motion } from 'framer-motion'
-
 import { styles } from '../styles'
-import { fadeIn, textVariant } from '../utils/motion'
-import { SectionWrapper } from '../hoc'
-import {testimonials } from '../constants'
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion'
+import { testimonials } from '../constants'
+import PropTypes from 'prop-types'
 
-const FeedbacksCard = ({ index, testimonial, name, company, image, designation }) => 
+
+export const FeedbacksCard = ({ index, testimonial, name, company, image, designation }) => 
 {
   return (
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 0.75)}
       className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'>
-      <p className='text-white font-black text-[48px]'>"</p>
+      <p className='text-white font-black text-[48px]'>{'"'}</p>
       
       <div className='mt-1'>
         <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
@@ -33,12 +33,27 @@ const FeedbacksCard = ({ index, testimonial, name, company, image, designation }
   )
 }
 
+FeedbacksCard.propTypes = {
+  index: PropTypes.string, 
+  testimonial: PropTypes.string,
+  name: PropTypes.string, 
+  designation: PropTypes.string, 
+  company: PropTypes.string, 
+  image: PropTypes.string
+}
 
 
 
-const Feedbacks = () => {
+export const Feedbacks = () => {
   return (
-    <div className='mt-12 bg-black-100 rounded-[20px]'>
+    <motion.section
+      variants={staggerContainer()}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+      className={`${styles.padding} max-h-7xl mx-auto relative z-0`}
+    >
+      <div className='mt-12 bg-black-100 rounded-[20px]'>
       <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Ce que disent les autres</p>
@@ -56,8 +71,7 @@ const Feedbacks = () => {
           ))
         }
       </div>
-    </div>
+      </div>
+    </motion.section>  
   )
 }
-
-export default SectionWrapper(Feedbacks, "")
